@@ -1,15 +1,89 @@
 body {
-
+    font-family:sans-serif;
 }
 
-header {
-
+#landingButtons {
+    display: grid;
+    margin: 100px auto;
+    grid-template-columns: repeat(1fr 5);
+    grid-row: repeat(1fr 2);
 }
 
-nav {
-
+.box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: solid purple 1px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 0 auto;
+}
+.box:hover {
+    transition: 0.5s;
+    color: white;
+    background-color: purple;
 }
 
-main {
-    
+#linkA {
+    grid-column: 1;
+    grid-row: 1;
+}
+#linkB {
+    grid-column: 3;
+    grid-row: 1;
+}
+#linkC {
+    grid-column: 5;
+    grid-row: 1;
+}
+#linkD {
+    grid-column: 2;
+    grid-row: 2;
+}
+#linkE {
+    grid-column: 4;
+    grid-row: 2;
+}
+
+#titleText h1 {
+    margin-top: 200px;
+    text-align: center;
+    font-size: 100px;
+    color: purple;
+    animation: easein 2s;
+    -moz-animation: easein 2s; /* Firefox */
+    -webkit-animation: easein 2s; /* Safari and Chrome */
+}
+@keyframes easein {
+    from {
+        transform: translate(0, -100px);  
+        opacity:0;
+    }
+    to {
+        transform: translate(0, 0);  
+        opacity:1;
+    }
+}
+@-moz-keyframes easein { /* Firefox */
+    from {
+        transform: translate(0, -100px);  
+        opacity:0;
+    }
+    to {
+        transform: translate(0, 0);  
+        opacity:1;
+    }
+}
+@-webkit-keyframes easein { /* Safari and Chrome */
+    from {
+        transform: translate(0, -100px);  
+        opacity:0;
+    }
+    to {
+        transform: translate(0, 0);  
+        opacity:1;
+    }
 }
