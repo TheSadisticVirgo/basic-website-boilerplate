@@ -2,6 +2,10 @@ body {
     font-family:sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 #landingButtons {
     display: grid;
     margin: 100px auto;
